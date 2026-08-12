@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <title> pagina web</title>
+    <!-- meta informa dados-->
+    <meta charset="utf-8"><!--informa sobre a foram correta dos caracteres-->
+    <!--daos que auxiliam no paradrão de busca do crhome na hora de exibir dados  da pesquisa -->
+    <meta name="author" content="Davi">
+    <meta name="descrption" content="lista de tags html">
+    <meta name="keywords" content="html, tags">
+    <link rel="stylesheet" href="Sup-labs-css.css">
+</head>
+<body>    <!-- tudo q sera visualisado na pagina-->
+<header>
+    <nav>
+    <img class="logo"src="logo-suplabs.png" alt=""> 
+    </nav>
+   <article id="upheder">
+    <input class="PesBar" type="search" placeholder="procure pelo seu suplemento ideal">
+   </article>
+    <button class="favbtn" command="show-modal" commandfor="meu-favoritos-modal">
+        <i class="material-icon">
+            <t class="hert">🤍</t>
+            favoritos
+        </i>
+        </button>
+       <dialog id="meu-favoritos-modal">
+        <button command="close" commandfor="meu-favoritos-modal" style="float: right;">X</button>
+        <h2>Meus Favoritos</h2>
+        <p>Aqui estarão os produtos que você marcou como favoritos.</p>
+    </dialog>
+    <button class="carbtn" command="show-modal" commandfor="meu-carrinho-modal">
+        <i class="material-icon">
+            <t class="cart">🛒</t>
+            carrinho
+        </i>
+    </button>
+    <dialog id="meu-carrinho-modal">
+        <button command="close" commandfor="meu-carrinho-modal" style="float: right;">X</button>
+        <h2>Meu Carrinho</h2>
+        <p>Aqui estarão os produtos que você adicionou ao carrinho.</p>
+    </dialog>
+    
+    <!-- O botão agora aponta para o ID do dialog usando commandfor -->
+<button class="loginbtn" title="logar" command="show-modal" commandfor="meu-login-modal">
+    👤
+</button>
+
+<!-- Substituímos <login-modal> por <dialog> -->
+<dialog id="meu-login-modal">
+    <!-- Botão opcional para fechar a janela se o usuário desistir -->
+    <button command="close" commandfor="meu-login-modal" style="float: right;">X</button>
+    
+    <form method="dialog"> <!-- O method="dialog" faz o modal fechar ao enviar -->
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Entrar</button>
+        <p>Não tem uma conta? <a href="create-cont-page.html">Cadastre-se</a></p>
+    </form>
+</dialog>
+</header>
+<!-- fim do cabecario e do modal-->
+    <main>
+        <header class="mini-hed">
+<a  class="min-opt" href="">OFERTAS</a>
+<a class="min-opt" href="">WEY PROTEIN</a>
+<a class="min-opt" href="">CREATINA</a>
+<a class="min-opt" href="">KITS</a>
+    </main>
+</header>
+   <main id="anucement">
+<box class="auncement">
+    
+</box>
+    <button class="R-set-btn">❯</button><!--botoes de proxim na caixa de anuncios-->
+    <button class="L-set-btn">❮</button>
+    <div class="anuncement-box">
+        <a class="anuncement-link" href="produto1.html" target="_blank">
+        <div class="anuncement-item">
+            <img src="anuncio1.jfif" alt="" class="anuncement-img">
+            <hr>
+            <h3>creatina</h3>
+            <p class="apartir">apartir de:</p>
+            <h2 class="preço">49,99</h2>
+        </div>
+        </a>
+       <a class="anuncement-link" href="produto2.html" target="_blank"><div class="anuncement-item">
+            <img src="anuncio2.jfif" alt="" class="anuncement-img">
+            <hr>
+            <h3>wey protein</h3>
+            <p class="apartir">apartir de:</p>
+            <h2 class="preço">99,99</h2>
+        </div>
+        </a>
+      <a class="anuncement-link" href="produto3.html" target="_blank"><div class="anuncement-item">
+         <img src="anuncio3.jfif" alt="" class="anuncement-img">
+            <hr>
+            <h3>pasta de amendoim</h3>
+            <p class="apartir">apartir de:</p>
+            <h2 class="preço">29,99</h2>
+        </div>
+        </a>
+        </div>
+  </main>
+
+
+
+</body>
+<footer>
+<p class="footer">© 2024 Suplabs. Todos os direitos reservados.</p>
+<p>site feito por: Davi</p>
+</footer>

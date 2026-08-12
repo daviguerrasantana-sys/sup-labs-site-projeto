@@ -1,0 +1,240 @@
+header{
+   background-color: #db0202;
+    width: 100% ;
+    height: 85px;
+    margin: 1px;
+    border-radius: 10px;
+    z-index: 2;
+}
+.logo{
+    width: 200px;
+    height: 85px;
+    margin-left: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+#upheder{
+    position: absolute;
+    margin-top: -72px;
+    margin-left: 20%;
+}
+.PesBar{
+    height: 50px;
+    width: 520px;
+    font-size: large;
+    border-radius: 5px;
+    border: 2px white solid ;
+}
+.favbtn{
+    color: #ffffff;            /* Cor do coração/carrinho (branco) */
+    border: none;              /* Remove aquela borda feia do botão */
+    padding: 10px 15px;        /* Espaçamento interno */
+    border-radius: 8px;        /* Deixa os cantos do botão arredondados */
+    cursor: pointer;           /* Faz o mouse virar a "mãozinha" de clique */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-size: medium;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 1075px;
+    border: none;
+    background-color: #db0202;
+}
+.hert{
+    font-size: 30px;
+    padding: 10px;
+}
+.favbtn:hover{
+    transform:  translateX(2px) translateY(-5px);
+}
+.carbtn{
+    color: #ffffff;            /* Cor do coração/carrinho (branco) */
+    border: none;              /* Remove aquela borda feia do botão */
+    padding: 10px 15px;        /* Espaçamento interno */
+    border-radius: 8px;        /* Deixa os cantos do botão arredondados */
+    cursor: pointer;           /* Faz o mouse virar a "mãozinha" de clique */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-size: medium;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 1225px;
+    border: none;
+    background-color: #db0202;
+}
+.cart{
+    font-size: 30px;
+    padding: 10px;
+}
+.carbtn:hover{
+    transform:  translateX(2px) translateY(-5px);
+}
+.loginbtn{
+     position: absolute;
+    margin-top: -60px;
+    margin-left: 1400px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.loginbtn:hover{
+    transform:  translateX(2px) translateY(-5px);
+}
+.mini-hed{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: dimgrey;
+    height: 37px;
+    width: 85%;
+    text-align: center;
+    
+}
+main{
+    display: flex;                 /* 1. Ativa o modo Flexbox */
+    justify-content: center;       /* 2. Centraliza na HORIZONTAL (esquerda/direita) */
+    align-items: center;           /* 3. Centraliza na VERTICAL (cima/baixo) */
+    height: 3.8vh;                 /* Opcional: faz a caixa pai ocupar a altura inteira da tela */
+}
+.min-opt{
+    padding: 50px;
+    padding-top: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:large;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: aliceblue;
+}
+box{
+padding: 20px;
+border: 2px solid rgb(2, 2, 2);
+margin-top: 420px;
+width: 90%;
+height: 370px;
+border-radius: 5px;
+}
+.auncement{
+    background-image:url(aindontem.png) ;
+    background-size: 100%;
+    background-attachment: none ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.R-set-btn{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 1450px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+     background-color: transparent;
+     cursor: pointer;
+}
+.L-set-btn{
+    position: absolute;
+    margin-top: 400px;
+    margin-right: 1450px;
+     width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.anuncement-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    border: 2px solid rgb(255, 253, 253);
+    margin-top: 1350px;
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    height: 45%;
+    align-items: center;
+    justify-content: center;
+}
+.anuncement-item {
+    
+    margin: 70px;
+    width: 200px;
+    height: 350px;
+    border: rgb(126, 126, 126) solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.anuncement-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ;
+}
+.anuncement-img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.apartir{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 15px;
+    margin-top: -5px;
+    color:green
+}
+.preço{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    color: green;
+}
+footer{
+    position: absolute;
+    background-color: #020202;
+    width: 99% ;
+    height: 85px;
+    margin-top: 65%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.anuncement-link {
+    text-decoration: none;
+    color: inherit;
+}
+css/* Estilizando a janelinha do Modal */
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+/* Estilizando o fundo escuro que fica atrás do modal */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto transparente */
+    backdrop-filter: blur(5px);           /* Deixa o fundo borrado (muito moderno!) */
+}
+
+/* Organizando os inputs um embaixo do outro */
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
